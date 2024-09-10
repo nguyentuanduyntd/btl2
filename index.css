@@ -1,0 +1,437 @@
+*{
+    font-family: Arial, sans-serif;
+    margin-left: 0;
+}
+html{
+    scroll-behavior:smooth;
+}
+#sanhtiec {
+    padding-top: 100px; /* Điều chỉnh giá trị này để phù hợp với chiều cao của header */
+    margin-top: -100px; /* Điều chỉnh giá trị này để giữ phần tử không bị di chuyển ngoài viewport */
+}
+#sanhhoinghi{
+    padding-top: 100px; /* Điều chỉnh giá trị này để phù hợp với chiều cao của header */
+    margin-top: -100px;
+}
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+/* header menu*/
+header {
+    padding: 10px 20px;
+    background-color: #1E283D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu > li {
+    position: relative;
+    margin-left: 30px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.menu > li > a:hover,
+.menu > li > a:focus {
+    color: #FFC33E;
+}
+.menus{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style-type: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu li a:hover,
+.submenu li a:focus {
+    background-color: #f8f8f8;
+}
+
+.menu > li:hover .submenu,
+.menu > li:focus-within .submenu {
+    display: block;
+}
+
+.special-button {
+    background-color: #a00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.special-button:hover,
+.special-button:focus {
+    background-color: #900;
+}
+/*section 1*/
+.picture {
+    position: relative;
+    width: 100%;
+    margin: 0; /* Loại bỏ khoảng cách bên trên và dưới */
+}
+
+.picture img {
+    width: 100%;
+    height: 700px;
+    display: block;
+    margin: 0 auto; /* Căn giữa hình ảnh theo chiều ngang */
+    padding: 0;
+    object-fit: cover;
+}
+
+.topic {
+    position: absolute;
+    top: 50%; /* Căn chỉnh nội dung theo chiều dọc */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa nội dung theo cả hai chiều */
+    text-align: center;
+    color: white;
+}
+.topicless{
+    color:white;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.topicmore{
+    color:#790000;
+    letter-spacing: 2px;
+    font-size: 70px;
+    font-family: Cursive;
+}
+@keyframes gentleShake {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(0.5deg); }
+    50% { transform: translate(-2px, 2px) rotate(-0.5deg); }
+    75% { transform: translate(2px, -2px) rotate(0.5deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.topicmore{
+    animation: gentleShake 1.5s ease-in-out infinite;
+}
+/*section 2*/
+.section2{
+    width:70%;
+    text-align: center;
+    margin:0 auto;
+    letter-spacing: 3px;
+}
+.section2-1{
+    font-size: 42px;
+    font-family: Serif, sans-serif;
+}
+.section2-3{
+    font-size: 1rem;
+    font-family: Literata,sans-serif;
+}
+/* section 3 middle*/
+.middle{
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+    display:flex;
+}
+.left{
+    width:60%;
+}
+.left img{
+    width:100%;
+}
+.right{
+    width:40%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.right img{
+    width:100%;
+}
+.thumb>div{
+    width:25%;
+    margin-right: 2px;  
+}
+.thumb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*nav*/
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*containers*/
+.containers{
+    display:flex;
+    justify-content: center;
+}
+.container{
+    height: 450px;
+    gap:10px;
+    display:flex;
+    justify-content: center;
+}
+.container img{
+    width:10%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.6);
+    transition: all ease-in-out 0.5s;
+}
+.container img:hover{
+    width:25%;
+}
+.diadiem{
+    margin-top: 20px;
+    text-align: center;
+    color:#790000;
+    font-family: Serif, sans-serif;
+}
+.address{
+    display:flex;
+    gap:70px;
+    align-items: center;
+    justify-content: center;
+}
+.address>p{
+    font-family: Cursive;
+}
+/*food*/
+.foods{
+    background-color:#1E283D;
+    width:100%;
+}
+.food{
+    display:flex;
+    justify-content: center;
+}
+.food1{
+    width:35%;
+    margin-top: 50px;
+}
+.food1 img{
+    width:100%;
+}
+.food2{
+    width:35%;
+    margin-top: 50px;
+}
+.food2>button{
+    background-color: #FFC33E;
+    margin-top:50px;
+    height:50px;
+    margin-left: 20px;
+    color:white;
+}
+.food2>button:hover{
+    color:black;
+}
+.food3{
+    width:70%;
+    display:flex;
+    margin-left: auto;
+    margin-top: 50px;
+    justify-content: center;
+    margin-right: auto;
+}
+.food3 img{
+    width:100%;
+}
+.food3>div{
+    margin-right: 20px;
+}
+.food3>div:last-child{
+    margin-right: 0;
+}
+/*footer*/
+footer{
+    background-color: #1E283D;
+    color:#FFFFFF;
+    display:flex;
+    font-family: Arial;
+    margin-top: 20px;
+    height: 350px;
+
+}
+.last1{
+    width:50%;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.last1-3>i{
+    padding:5px;
+}
+.last2{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.last2>p{
+    text-align: center;
+}
+/*đặt tiệc*/
+.dattiec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    width: 100%; 
+    height:450px;
+}
+
+.dattiec>h1 {
+    text-align: center;
+    color: #900;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.dattiec>input {
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%; 
+    max-width: 500px; 
+}
+.dattiec .grouped-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80%;
+    max-width: 500px;
+    padding:10px;
+}
+
+.dattiec .grouped-inputs input {
+    width: 48%;
+}
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+}
+/*responsive*/
+@media only screen and (max-width: 768px) {
+    /* Display the menu toggle button */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Hide the menu by default */
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1E283D;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 999;
+    }
+
+    /* Show menu items vertically and full width */
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .h1 h1 {
+        font-size: 28px;
+    }
+
+    .h1 h3 {
+        font-size: 18px;
+    }
+
+    .news {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .new {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .new img {
+        width: 100%;
+        height: auto;
+    }
+
+    .scrollToTop {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

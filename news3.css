@@ -1,0 +1,54 @@
+*{
+    margin:0;
+}
+.picture{
+    width:100%;
+}
+.picture img{
+    width:100%;
+    height:650px;
+    object-fit: cover;
+}
+.container{
+    width:70%;
+    margin-left:30px;
+}
+.container>ol>li,
+.container>ul>li{
+    font-size: 16px;
+    color:#333333;
+    font-family: 'Literata', sans-serif;
+    width:70%;
+    margin-bottom: 5px;
+}
+.container>h2,
+.container>h3{
+    margin-bottom: 5px;
+}
+.container>p{
+    font-size: 16px;
+    color:gray;
+    font-family: 'Literata';
+    margin-bottom: 5px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: For a slight slide effect */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Adjust timing as needed */
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0); /* Reset to original position */
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}

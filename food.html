@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link href="food.css" rel="stylesheet"/>
+    <script src="food.js"></script>
+</head>
+<body>
+    <header class=" menus flex">
+        <div class="logo">
+            <img src="images/logo2.jpg" alt="Logo">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <ul class="menu flex">
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Tiệc Cưới</a>
+                <ul class="submenu">
+                    <li><a href="#">Sảnh tiệc</a></li>
+                    <li><a href="food.html">Thực đơn</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Hội Nghị & Sự Kiện</a>
+                <ul class="submenu">
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Sảnh hội nghị</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin Tức</a>
+            </li>
+            <li><a href="#" class="special-button">Đặt tiệc</a></li>
+        </ul>
+    </header>
+    <h1>THỰC ĐƠN</h1>
+    <main>
+        <nav class="menu-nav">
+            <button onclick="showCategory('main-dishes')">Món chính</button>
+            <button onclick="showCategory('side-dishes')">Món Khai vị</button>
+            <button onclick="showCategory('drinks')">Đồ uống</button>
+        </nav>
+        <section class="menu-foods">
+            <div class="menu-food main-dishes">
+                <div>
+                    <img src="images/f2.jpg"/>
+                    <p>Súp gà tuyết nhĩ</p>
+                </div>
+                <div>
+                    <img src="images/f3.jpg"/>
+                    <p>Gỏi hản sản</p>
+                </div>
+                <div>
+                    <img src="images/f6.jpg"/>
+                    <p>Tôm hùm bông</p>
+                </div>
+                <div>
+                    <img src="images/f7.jpg"/>
+                    <p>Tôm hùm baby</p>
+                </div>
+                <div>
+                    <img src="images/f13.jpg"/>
+                    <p>Mực & Bạch tuột</p>
+                </div>
+                <div>
+                    <img src="images/f14.jpg"/>
+                    <p>Cá mặt quỷ</p>
+                </div>
+                <div>
+                    <img src="images/f15.jpg"/>
+                    <p>Cá hồi phi lê</p>
+                </div>
+                <div>
+                    <img src="images/f16.jpg"/>
+                    <p>Cá tầm sống</p>
+                </div>
+                <div>
+                    <img src="images/f17.jpg"/>
+                    <p>Cá bớp nướng</p>
+                </div>
+                <div>
+                    <img src="images/f18.jpg"/>
+                    <p>Cá bống mú</p>
+                </div>
+                <div>
+                    <img src="images/f19.jpg"/>
+                    <p>Cá mú sao đỏ</p>
+                </div>
+                <div>
+                    <img src="images/f20.jpg"/>
+                    <p>Cá chình bông</p>
+                </div>
+                <div>
+                    <img src="images/f21.jpg"/>
+                    <p>Bò nướng mè</p>
+                </div>
+                <div>
+                    <img src="images/f22.jpg"/>
+                    <p>Gà luộc</p>
+                </div>
+                <div>
+                    <img src="images/f23.jpg"/>
+                    <p>Gà chọi hầm sả</p>
+                </div>
+                <div>
+                    <img src="images/f24.jpg"/>
+                    <p>Đà điểu nướng</p>
+                </div>
+                <div>
+                    <img src="images/f26.jpg"/>
+                    <p>Ếch nướng</p>
+                </div>
+                <div>
+                    <img src="images/f27.jpg"/>
+                    <p>Thỏ tái chanh</p>
+                </div>
+                <div>
+                    <img src="images/f28.jpg"/>
+                    <p>Cơm chiên hải sản</p>
+                </div>
+           </div>
+           <div class="menu-food side-dishes" style="display:none;">
+                <div>
+                    <img src="images/f25.jpg"/>
+                    <p>Xôi bồ câu</p>
+                </div>
+                <div>
+                    <img src="images/f12.jpg"/>
+                    <p>Ngêu, sò, ốc</p>
+                </div>
+                <div>
+                    <img src="images/f11.jpg"/>
+                    <p>Hàu sữa</p>
+                </div>
+                <div>
+                    <img src="images/f5.jpg"/>
+                    <p>Bò beef steak + khoai tây chiên</p>
+                </div>
+                <div>
+                    <img src="images/f1.jpg"/>
+                    <p>Chả cá thác lác chiên</p>
+                </div>
+                <div>
+                    <img src="images/f10.jpg"/>
+                    <p>Ghẹ biển</p>
+                </div>
+                <div>
+                    <img src="images/f8.jpg"/>
+                    <p>Tôm sú</p>
+                </div>
+                <div>
+                    <img src="images/f9.jpg"/>
+                    <p>Cua biển</p>
+                </div>
+                <div>
+                    <img src="images/f4.jpg"/>
+                    <p>Tổ chim hải sản</p>
+                </div>
+           </div>
+           <div class="menu-food drinks" style="display:none;">
+                <div>
+                    <img src="images/drink1.png"/>
+                    <p>Whisky</p>
+                </div>
+                <div>
+                    <img src="images/drink2.png"/>
+                    <p>Rượu COGNAC</p>
+                </div>
+                <div>
+                    <img src="images/drink3.png"/>
+                    <p>Vang chi Lê</p>
+                </div>
+                <div>
+                    <img src="images/drink4.png"/>
+                    <p>Rượu VODKA</p>
+                </div>
+                <div>
+                    <img src="images/drink5.png"/>
+                    <p>Vang Úc</p>
+                </div>
+                <div>
+                    <img src="images/drink6.jpg"/>
+                    <p>Bia Heineken</p>
+                </div>
+                <div>
+                    <img src="images/drink7.png"/>
+                    <p>Nước suối</p>
+                </div>
+           </div>
+        </section>
+    </main>
+</body>
+</html>
